@@ -13,6 +13,7 @@ sumbitBtn.addEventListener("click", function() {
     console.log(userAge);
 
 // chiedere numero di chilometri da percorrere
+
     const distanceInput = document.getElementById("distance");
     const distance = parseFloat(distanceInput.value);
     console.log(distance);
@@ -38,12 +39,12 @@ sumbitBtn.addEventListener("click", function() {
         const discount = (fullPrice * 40 / 100);
         result = (fullPrice - discount).toFixed(2);
         console.log(result);
-        ticketType = "Biglietto Standard"
+        ticketType = "Biglietto Forever Young"
            
     } else{
         result = fullPrice.toFixed(2);
         console.log(result);
-        ticketType = "Biglietto Forever Young"
+        ticketType = "Biglietto Standard"
     }
 
     //genero numero codice CP e coach
@@ -67,4 +68,10 @@ eraseBtn.addEventListener("click", function() {
     document.getElementById("user-name").value = "";
     document.getElementById("user-age").value = "";
     document.getElementById("distance").value = "";
+
+    document.getElementById("fullname").innerHTML = ""; 
+    document.getElementById("offer").innerHTML = "";  
+    document.getElementById("coach").innerHTML = "";   
+    document.getElementById("ticket-num").innerHTML = "";   
+    document.getElementById("ticket-price").innerHTML = "";     
 })
