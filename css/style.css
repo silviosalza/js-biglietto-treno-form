@@ -1,5 +1,33 @@
 
-
+body{
+    background-color:rgb(100, 25, 25);
+}
 .container{
-    background-color: rgb(173, 173, 173);
+    background-color: beige;
+    border-radius: 10px;
+}
+.ticket{
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    margin: 3rem 0;
+}
+.ticket p,
+.fullname,
+label{
+    font-weight: 700;
+}
+h1{
+    color: beige;
+}
+
+button{
+    background-color:beige;
+}
+button:hover{
+    filter: invert(100);
+    transform: scale(130%);
+}
+input,
+select{
+    border: 3px black solid;
 }

@@ -61,3 +61,10 @@ sumbitBtn.addEventListener("click", function() {
     document.getElementById("ticket-price").innerHTML = result + " €";     
 });
 
+const eraseBtn = document.getElementById("erase-btn");
+eraseBtn.addEventListener("click", function() {
+
+    document.getElementById("user-name").value = "";
+    document.getElementById("user-age").value = "";
+    document.getElementById("distance").value = "";
+})
